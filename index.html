@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="body">
+
+    <div class="cart">
+        <div class="cart-wrapper position-relative" id="cart-wrapper">
+            <span>Cart</span>
+            <div class="cart-items-counter">
+                <div id="cart-items-counter"></div>
+            </div>
+        </div>
+        <div class="cart-content">
+            <div class="cart-content-wrapper">
+                <div class="close-cart-btn" id="close-cart-btn">X</div>
+                <div class="cart-item cart-item-header">
+                    <span>Item</span>
+                    <span>Price</span>
+                </div>
+                <div id="load-cart-here"></div>
+                <div class="cart-item cart-item-footer">
+                    <span>Sum:</span>
+                    <span id="cart-total"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="hero-carousel">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner" id="carousel-items">
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div class="sticky-nav">
+    <nav>
+        <div class="container-fluid container-lg">
+            <div class="nav-wrapper">
+                <a class="nav-item" href="#body">Home</a>
+                <a class="nav-item" href="#hero">Store</a>
+                <a class="nav-item" href="#about">About</a>
+                <a class="nav-item" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="grid-section py-5">
+        <div class="container-fluid container-lg">
+            <h3 class="section-heading mb-3">Grid</h3>
+            <h4 class="section-subheading mb-5">Below presented <span class="accent-color">responsive</span> gallery</h4>
+            <div class="grid-wrapper row row-gap-4">
+                <div class="row col-lg-6 m-0 p-0">
+                    <div class="grid-item col-12 h-100"><div class="item-wrapper h-100 square"><img src="assets/images/grid-square.jpg" class="object-fit-cover img-fluid" alt=""></div></div>
+                </div>
+                <div class="row col-lg-6 m-0 p-0 row-gap-4">
+                    <div class="grid-item col-md-6"><div class="item-wrapper square"><img src="assets/images/grid-square-2.jpg" class="object-fit-cover img-fluid" alt=""></div></div>
+                    <div class="grid-item col-md-6"><div class="item-wrapper square"><img src="assets/images/grid-square-3.jpg" class="object-fit-cover img-fluid" alt=""></div></div>
+                    <div class="grid-item col-lg-12"><div class="item-wrapper"><img src="assets/images/grid-landscape.jpg" class="object-fit-cover img-fluid" alt=""></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section py-5" id="about">
+        <div class="container-fluid container-lg">
+            <h3 class="section-heading mb-3">About</h3>
+            <div class="about-wrapper">
+                <div class="row">
+                    <div class="about-content col-lg-8">
+                        <p>Welcome to <span class="accent-color">GentlemenCraft</span>, where style meets sophistication for the modern man. Established with a passion for timeless elegance and contemporary flair, we curate a distinctive collection of men's clothing that transcends trends.</p>
+                        <p>At <span class="accent-color">GentlemenCraft</span>, we believe that every garment tells a story, and our curated selection reflects a commitment to quality craftsmanship, premium materials, and attention to detail. From classic essentials to fashion-forward pieces, our range embodies the essence of the confident and discerning gentleman.</p>
+                        <br><br>
+                        <ul class="about-list">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-wrapper col-lg-4">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Our Mission
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Our Mission</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Our mission is to empower men to express their individuality through fashion, offering a carefully curated blend of versatile staples and statement pieces. Whether you're dressing for a boardroom meeting, a night out on the town, or a casual weekend, our collection seamlessly fuses comfort and style.
+                                    <br><br>
+                                    Explore a world where tradition meets modernity, where refined tailoring merges with contemporary design. GentlemenCraft is not just a brand; it's a lifestyle, a celebration of the man who appreciates the finer things in life and embraces his unique sense of style.
+                                    <br><br>
+                                    Join us on this sartorial journey, and let GentlemenCraft be your destination for elevated menswear that stands the test of time. Elevate your wardrobe, enhance your presence – because every man deserves to dress with confidence and distinction.
+                                    <br><br>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="products-table w-100">
+                <thead>
+                    <th class="p-3 product-name">Item</th>
+                    <th class="p-3 product-description">Description</th>
+                    <th class="p-3 product-price">Price</th>
+                </thead>
+                <tbody id='items-table'>
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="contact-section py-5" id="contact">
+        <div class="container-fluid container-lg">
+            <h1 class="section-heading mb-5">Contact</h1>
+            <div class="row align-items-start justify-content-evenly column-gap-0 column-gap-lg-5 row-gap-5 row-gap-lg-0">
+                <div class="col-12 col-lg-5">
+                    <form class="contact-form d-flex flex-column gap-3" id="contact-form">
+                        <div class="alert alert-success small" role="alert">
+                            Your form has been submited.
+                            <button type="button" class="btn-close"></button>
+                        </div>
+                        <div class="form-group d-flex flex-column gap-1">
+                            <label class="text-white" for="name">Full Name</label>
+                            <input class="dark-bg py-2 px-3" type="text" class="form-control" id="name" aria-describedby="fullName"
+                                placeholder="Full Name">
+                        </div>
+                        <div class="form-group d-flex flex-column gap-1">
+                            <label class="text-white" for="email">E-mail</label>
+                            <input class="dark-bg py-2 px-3" type="email" class="form-control" id="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group d-flex flex-column gap-1">
+                            <label class="text-white" for="phone">Contact Phone</label>
+                            <input class="dark-bg py-2 px-3" type="phone" class="form-control" id="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group d-flex flex-column gap-1">
+                            <label class="text-white" for="message" class="form-label">Comment</label>
+                            <textarea no-resize="true" class="text-white dark-bg form-control py-2 px-3" id="message" rows="3" placeholder="Message..."></textarea>
+                        </div>
+                        <button type="button" class="send-form-btn btn btn-primary">Send</button>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="d-flex flex-column gap-3">
+                        <h4 class="mb-3 text-white">Get in touch</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, qui corporis vero provident commodi reprehenderit voluptatibus minima ex, ea nostrum inventore et iste aliquid modi rem fuga dolore necessitatibus tempora!
+                        </p>
+                        <a href="mailto:info@blabla.mk">info@blabla.mk</a>
+                        <a href="tel:+3893222111" class="contact-tel">(389)3222-111</a>
+                        <a class="p-color" href="https://www.google.com/maps/place/293X%2B997,+Blvd.+Partizanski+Odredi+62,+Skopje+1000/@42.0035145,21.3984541,17z/data=!3m1!4b1!4m6!3m5!1s0x135414694f9671ff:0x2f334a4178772090!8m2!3d42.0035145!4d21.3984541!16s%2Fg%2F11qp43_qk9?entry=ttu" target="_blank">Blvd. Partizanska 62<br>1000 Skopje, Macedonia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
